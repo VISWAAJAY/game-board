@@ -1,0 +1,27 @@
+.footer-container {
+  width: 100vw;
+  height: 60px;
+  background-color: black;
+  opacity: 0.5;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.footer-content {
+  display: inline-block;
+  color: white;
+  font-size: large;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: moveToLeft 7s linear infinite;
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
