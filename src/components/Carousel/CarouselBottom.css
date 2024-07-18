@@ -1,0 +1,40 @@
+.carousel {
+  width: 100vw;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(300vw);
+  animation: scroll 6s linear infinite;
+}
+
+.carousel-slide img {
+  width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-slide {
+  width: 25%;
+  /* Each slide takes up 1/6 of the carousel width (since we have 6 slides) */
+  flex: 0 0 auto;
+  /* Prevent flex items from growing or shrinking */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
