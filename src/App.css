@@ -1,10 +1,10 @@
 .App {
   margin-top: 62px;
-  padding: 20px;
-  height: 55vh;
+  padding: 10px;
+  height: 60vh;
+  box-sizing: border-box;
   background-image: url("./bg.avif");
   background-size: cover;
   background-position: center;
   overflow-y: scroll;
 }
-
